@@ -158,7 +158,7 @@ while True:
     MemUsage = subprocess.check_output(cmd, shell = True )
     cmd = "df -h | awk '$NF==\"/\"{printf \"D: %d/%dGB\", $3,$2}'"
     MainDisk = subprocess.check_output(cmd, shell = True )
-    cmd = "df -h | awk '$NF==\"/mnt/plex-hdd\"{printf \"P: %sB/%sB\", $3,$2}'"
+    cmd = "df -h | awk '$NF==\"/mnt/storage\"{printf \"P: %sB/%sB\", $3,$2}'"
     PlexDisk = subprocess.check_output(cmd, shell = True )
 
 
