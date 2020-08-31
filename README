@@ -1,0 +1,5 @@
+# OLED Stats
+
+## Installation
+
+Simply add `sudo python3.7 /home/pi/stats/stats.py &` to the Raspberry Pi's `/etc/rc.local` file. Then the stats program will run on boot.
